@@ -14,7 +14,11 @@ Puppet module used to delpoy sssd for ldap authentication
 
 ===
 
-# Installation:
+# Adding the class:
+1. Create a new file associated to your organization
+2. Name the class class sssd::<title of new file>
+3. Make the appropiate changes.
+
 <pre>
       class { 'sssd':
         ldap_base => 'dc=mycompany,dc=com',
