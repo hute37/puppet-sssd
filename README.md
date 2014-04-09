@@ -30,7 +30,7 @@ Puppet module used to delpoy sssd for ldap authentication
 
 # Extra Files
 
-- *lighdm.conf*    ->  Used to manage the login screen  '/etc/lightdm/lightdm.conf'
+- *lightdm.conf*    ->  Used to manage the login screen  '/etc/lightdm/lightdm.conf'
 - *password-auth*  ->  Can change it to what you like  (Module will put it where it goes)
 - *system-auth*    ->  Same as password-auth
 - *nsswitch.conf*  ->  Can change it to what you like  (Module will put it where it goes)
