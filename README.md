@@ -8,7 +8,7 @@ Puppet module used to delpoy sssd for ldap authentication
 - It's currently being used to authenticate against AD
 - Cached accounts!
 - Server failover!
-- For information on the each varible click below
+- For information on the each varible click
 [fedoraproject.org](http://docs.fedoraproject.org/en-US/Fedora/15/html/Deployment_Guide/chap-SSSD_User_Guide-Configuring_Services.html)
 
 
