@@ -1,0 +1,57 @@
+# Managed by puppet - do not modify
+[sssd]
+config_file_version = 2
+debug_level = <%= scope.lookupvar('debug_level') %>
+reconnection_retries = <%= scope.lookupvar('reconnection_retries') %>
+sbus_timeout = <%= scope.lookupvar('sbus_timeout') %>
+services = <%= scope.lookupvar('services') %>
+domains = <%= scope.lookupvar('domains') %>
+
+[nss]
+debug_level = <%= scope.lookupvar('debug_level') %>
+reconnection_retries = <%= scope.lookupvar('reconnection_retries') %>
+filter_groups = <%= scope.lookupvar('filter_groups') %>
+filter_users = <%= scope.lookupvar('filter_users') %>
+
+[pam]
+debug_level = <%= scope.lookupvar('debug_level') %>
+reconnection_retries = <%= scope.lookupvar('reconnection_retries') %>
+offline_credentials_expiration = <%= scope.lookupvar('offline_credentials_expiration') %>
+
+[domain/<%= scope.lookupvar('domains') %>]
+ldap_default_bind_dn = <%= scope.lookupvar('ldap_default_bind_dn') %>
+ldap_default_authtok_type = <%= scope.lookupvar('ldap_default_authtok_type') %>
+ldap_default_authtok = <%= scope.lookupvar('ldap_default_authtok') %>
+ldap_uri = <%= scope.lookupvar('ldap_uri') %>
+ldap_search_base = <%= scope.lookupvar('ldap_search_base') %>
+
+ldap_id_use_start_tls = <%= scope.lookupvar('ldap_id_use_start_tls') %>
+ldap_tls_reqcert = <%= scope.lookupvar('ldap_tls_reqcert') %>
+ldap_tls_cacert = <%= scope.lookupvar('ldap_tls_cacert') %>
+
+ldap_schema = <%= scope.lookupvar('ldap_schema') %>
+debug_level = <%= scope.lookupvar('debug_level') %>
+
+id_provider = <%= scope.lookupvar('id_provider') %>
+auth_provider = <%= scope.lookupvar('auth_provider') %>
+access_provider = <%= scope.lookupvar('access_provider') %>
+
+cache_credentials = <%= scope.lookupvar('cache_credentials') %>
+enumerate = <%= scope.lookupvar('enumerate') %>
+entry_cache_timeout = <%= scope.lookupvar('entry_cache_timeout') %>
+
+ldap_access_filter = <%= scope.lookupvar('ldap_access_filter') %>
+ldap_group_member =  <%= scope.lookupvar('ldap_group_member') %>
+ldap_group_object_class = <%= scope.lookupvar('ldap_group_object_class') %>
+ldap_group_name = <%= scope.lookupvar('ldap_group_name') %>
+ldap_network_timeout = <%= scope.lookupvar('ldap_network_timeout') %>
+
+ldap_user_name = <%= scope.lookupvar('ldap_user_name') %>
+ldap_user_object_class = <%= scope.lookupvar('ldap_user_object_class') %>
+ldap_user_gecos = <%= scope.lookupvar('ldap_user_gecos') %>
+ldap_user_home_directory = <%= scope.lookupvar('ldap_user_home_directory') %>
+ldap_user_fullname = <%= scope.lookupvar('ldap_user_fullname') %>
+
+
+ldap_account_expire_policy = <%= scope.lookupvar('ldap_account_expire_policy') %>
+ldap_access_order = <%= scope.lookupvar('ldap_access_order') %>
