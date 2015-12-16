@@ -1,3 +1,5 @@
+I have stopped development of this project in favor of Realmd. Eventually, I'll post an opensource puppet module for Realmd. 
+
 puppet-sssd
 ===========
 
