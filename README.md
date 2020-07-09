@@ -1,3 +1,5 @@
+Realmd module is posted but is quite old. It will provide a decent example. https://github.com/lehnertz85/puppet-realmd
+
 I have stopped development of this project in favor of [Realmd](http://www.freedesktop.org/software/realmd/). Eventually, I'll post an opensource puppet module for Realmd. 
 
 puppet-sssd
